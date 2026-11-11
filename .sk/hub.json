@@ -1,0 +1,115 @@
+{
+  "titulo": "Laboratorio-PC-C",
+  "arquivo": "index.html",
+  "itens": [
+    {
+      "path": "app/ferramentas/ai-code-studio.html",
+      "nome": "AI Code Studio",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/arrumador.html",
+      "nome": "Arrumador de Backups",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/colador.html",
+      "nome": "Colador de Links",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/faxina.html",
+      "nome": "🧹 Faxina de Repetidos",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/iara-suite.html",
+      "nome": "Iara Suite — Code Editor · APK Builder · Site Extractor",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/juntador.html",
+      "nome": "Juntador de Arquivos",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/meu-chat/index.html",
+      "nome": "Meu Chat",
+      "desc": "",
+      "on": false,
+      "icone": "app/ferramentas/meu-chat/icons/icon-192.png"
+    },
+    {
+      "path": "app/ferramentas/montador.html",
+      "nome": "Montador Universal",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/numerador.html",
+      "nome": "Numerador de Códigos",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/picotador.html",
+      "nome": "Picotador de Memória e Backup",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/preparador.html",
+      "nome": "Preparador Universal",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/projeto-lab.html",
+      "nome": "Projeto Lab",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/ferramentas/replicador.html",
+      "nome": "Replicador de Projeto",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    },
+    {
+      "path": "app/index.html",
+      "nome": "Laboratório",
+      "desc": "",
+      "on": true,
+      "icone": "app/icons/icon-192.png"
+    },
+    {
+      "path": "electron/navegador.html",
+      "nome": "🌐 Navegador — Mini SK",
+      "desc": "",
+      "on": false,
+      "icone": ""
+    }
+  ],
+  "sub": "",
+  "logo": "",
+  "tema": "claro",
+  "links": []
+}

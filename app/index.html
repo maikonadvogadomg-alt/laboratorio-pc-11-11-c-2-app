@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>Laboratório</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/extra.css">
+</head>
+<body>
+<header>
+  <div class="topo"><h1>🔬 Laboratório</h1><span class="chip" id="versao">v11/11-C</span></div>
+  <div class="barra">
+    <label class="sel">📂 Projeto <select id="sel-a"></select></label>
+    <button class="btn" id="b-importar">➕ Importar</button>
+  </div>
+</header>
+<nav class="abas" id="abas">
+  <button class="aba on" data-t="projetos">📂 Projetos</button>
+  <button class="aba" data-t="plano">🗺️ Plano macro</button>
+  <button class="aba" data-t="comparar">⚖️ Comparar A × B</button>
+  <button class="aba" data-t="ia">🤖 IA</button>
+  <button class="aba" data-t="memoria">📒 Memória</button>
+  <button class="aba" data-t="terminal">💻 Terminal</button>
+  <button class="aba" data-t="ferramentas">🧰 Ferramentas</button>
+</nav>
+<main>
+  <section data-p="projetos">
+    <div class="card">
+      <h2>Importar um projeto</h2>
+      <p class="muted">Cada projeto fica <b>separado, com nome</b>. Nada se mistura.</p>
+      <div class="linha">
+        <button class="btn p" id="b-zip">🗜 .zip / .tar.gz</button>
+        <button class="btn" id="b-pasta">📁 Pasta</button>
+        <button class="btn" id="b-html">📄 Um HTML só (ou vários arquivos)</button>
+        <button class="btn" id="b-colar">✍️ Colar código</button>
+      </div>
+      <input type="file" id="f-zip" accept=".zip,.tar,.gz,.tgz,.taz,application/zip,application/gzip,application/x-tar" hidden>
+      <input type="file" id="f-pasta" webkitdirectory multiple hidden>
+      <input type="file" id="f-html" multiple hidden>
+    </div>
+    <div class="card"><h2>Meus projetos</h2><div id="v-projetos"></div></div>
+  </section>
+
+  <section data-p="plano" hidden>
+    <div class="card">
+      <div class="linha"><b id="plano-nome"></b><span class="cresce"></span><button class="btn p" id="b-plano-baixar">⤓ Baixar o plano (.md)</button><button class="btn" id="b-plano-copiar">📋 Copiar para a IA</button></div>
+      <p class="muted pequeno">O plano completo do projeto escolhido lá em cima: mapa, como carrega, o que cada arquivo e função faz, quem chama quem, dependências, rotas, problemas e o que olhar quando algo quebrar. No fim, o pedido pronto para a IA.</p>
+    </div>
+    <div id="v-plano" class="md"></div>
+  </section>
+
+  <section data-p="comparar" hidden>
+    <div class="card">
+      <div class="linha">
+        <label class="sel">A (o que funciona) <select id="cmp-a"></select></label>
+        <label class="sel">B (o que não funciona) <select id="cmp-b"></select></label>
+      </div>
+      <div class="linha"><label class="pequeno"><input type="checkbox" id="cmp-esp" checked> não contar diferença só de espaço</label><span class="cresce"></span><button class="btn p" id="b-cmp">⚖️ Comparar</button><button class="btn" id="b-cmp-baixar">⤓ Relatório (.md)</button><button class="btn" id="b-cmp-copiar">📋 Copiar para a IA</button></div>
+    </div>
+    <div id="v-cmp"></div>
+  </section>
+
+  <section data-p="ia" hidden><div id="panel-ia"></div></section>
+  <section data-p="memoria" hidden><div id="panel-memoria"></div></section>
+  <section data-p="terminal" hidden><div id="panel-terminal" class="card"></div></section>
+  <section data-p="ferramentas" hidden><div id="panel-ferramentas"></div></section>
+</main>
+<div id="aviso" class="aviso" hidden></div>
+<script src="lib/jszip.min.js"></script>
+<script src="lib/acorn.min.js"></script>
+<script src="js/00-base.js"></script>
+<script src="js/10-banco.js"></script>
+<script src="js/20-importar.js"></script>
+<script src="js/30-analise.js"></script>
+<script src="js/40-plano.js"></script>
+<script src="js/50-comparar.js"></script>
+<script src="js/60-ferramentas.js"></script>
+<script src="js/70-ia.js"></script>
+<script src="js/75-memoria.js"></script>
+<script src="js/80-terminal.js"></script>
+<script src="js/99-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+LABORATÓRIO — 03/11
+====================
+Abas: 📂 Projetos · 🗺️ Plano macro · ⚖️ Comparar A × B · 🤖 IA · 📒 Memória · 💻 Terminal · 🧰 Ferramentas
+
+🤖 IA ............ é o seu Meu Chat aqui dentro (chaves, 🦙 Ollama, voz, internet, fotos, memória).
+                   Os botões 📎 colocam na caixa do chat o PLANO do projeto, a MEMÓRIA, a COMPARAÇÃO ou um ARQUIVO.
+📒 Memória ....... o caderno de cada projeto (objetivo, o que funciona, o que falta, decisões) + um caderno geral.
+                   Salva sozinho. 📎 manda para a IA.
+💻 Terminal ...... com a MESMA lógica do Mini SK (a que não cai):
+                   ▶ Ligar tudo = conecta no Termux → liga a ponte (em pedacinhos) → manda o projeto → entra na pasta.
+                   Religa sozinho se a conexão ou a ponte caírem. 🚀 Rodar o projeto, 🔁 servidor sem cair, 🦙 Ollama,
+                   ⬇ Trazer, 👁 ver a porta, 🤖 Perguntar à IA (manda a saída do terminal).
+                   NO COMPUTADOR: abra o Laboratório pelo Mini SK do PC (💻 Terminal → 🌐 Abrir como app):
+                   aí ele usa o terminal e a ponte do computador (os projetos vão para C:\Mini-SK\NOME).
+🧰 Ferramentas ... Montador Universal, Picotador, Faxina, Arrumador, Numerador, Preparador, Colador, Meu Chat
+                   e os seus códigos antigos — todos abrem aqui dentro.
+
+COMO ABRIR
+- O melhor: publique (GitHub Pages / Netlify) ou abra pelo Mini SK (▶️ Preview / 🚀 Publicar).
+- As ferramentas e o chat ficam em pastas (ferramentas/, kits/): abrir só o index.html solto pelo
+  gerenciador de arquivos pode não carregar elas.
+
+OS SEUS DADOS ficam no navegador (projetos, memória, conversas do chat). Não limpe os "dados do site".

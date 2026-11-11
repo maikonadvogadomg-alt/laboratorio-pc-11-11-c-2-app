@@ -1,0 +1,53 @@
+{
+  "name": "laboratorio-pc",
+  "version": "1.0.0",
+  "description": "Laboratório para PC — analisar, comparar e rodar projetos, com o terminal do computador e o Ollama",
+  "author": "Maikon",
+  "private": true,
+  "main": "electron/main.cjs",
+  "scripts": {
+    "programa": "electron .",
+    "exe": "electron-builder --win nsis portable --x64 --publish never"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "com.maikon.laboratorio.pc.nteste11110618",
+    "productName": "Laboratório (teste 11110618)",
+    "executableName": "Laboratorio-nteste11110618",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "app/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "asar": false,
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "app/ferramentas/meu-chat/icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Laboratório (teste 11110618)",
+      "artifactName": "Laboratorio-nteste11110618-Instalar.exe",
+      "include": "electron/instalar.nsh"
+    },
+    "portable": {
+      "artifactName": "Laboratorio-nteste11110618-sem-instalar.exe"
+    }
+  },
+  "portaDoPrograma": 7932
+}
